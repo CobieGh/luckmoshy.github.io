@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name=description content="LLuckyTrend Tangaza nasi.">
+    <meta name=author content=Webpixels>
+     <meta name="twitter:site" content="@Boostrablogger">
+  <meta name="twitter:creator" content="@boostrablogger">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Widget">
+  <meta name="twitter:description" content="Pata Habari mpya kila siku kuhusiana na Boostrablogger Kupitia luckmoshyTrend.">
+  <meta name="twitter:image" content="assets/img/theme/light/laptop-screen-1.png">
+  <!-- Facebook -->
+  <meta property="og:url" content="index.html">
+  <meta property="og:title" content="Widget">
+  <meta property="og:description" content="Pata Habari mpya kila siku kuhusiana na Boostrablogger Kupitia luckmoshyTrend">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/theme/light/laptop-screen-1.png">
+  <meta property="og:image:secure_url" content="assets/img/theme/light/laptop-screen-1.png">
+  <meta property="og:image:type" content="img/png">
+  <meta property="og:image:width" content="1285">
+  <meta property="og:image:height" content="920">	<title>luckmoshyTrend</title>
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%
+            }
+            100% {
+                width: 0;
+                height: 0
+            }
+        }
+        
+        body>div.preloader {
+            position: fixed;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        
+        body:not(.loaded)>div.preloader {
+            opacity: 1
+        }
+        
+        body:not(.loaded) {
+            overflow: hidden
+        }
+        
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector("body").classList.add("loaded")
+            }, 300)
+        })
+    </script>
+    <link rel=icon href=assets/img/brand/favicon.png type=image/png>
+    <link rel=stylesheet href=assets/libs/swiper/dist/css/swiper.min.css>
+    <link rel=stylesheet href=assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css>
+    <link rel=stylesheet href=assets/libs/%40fortawesome/fontawesome-free/css/all.min.css>
+    <link rel=stylesheet href=assets/css/quick-website.css id=stylesheet>
+	<style>
+.navbar-expand-lg .navbar-brand img {
+    height: 4rem;
+}
+	</style>
+</head>
+
+<body>
+    <div class=preloader>
+        <div class="spinner-border text-primary" role=status><span class=sr-only>inatafuta...</span></div>
+    </div>
+    <header class=header-transparent id=header-main>
+        <div id=navbar-top-main class="navbar-top py-1 navbar-dark bg-dark navbar-border">
+            <div class=container>
+                <div class="navbar-nav align-items-center">
+                    <div class="d-none d-lg-inline-block"><span class="badge badge-sm badge-success mr-2">Luckmoshy@gmail.com</span> <a href=https://www.freebloggertemplatetz.com/ target=_blank class="navbar-text text-sm mr-3">Website Developer and UI Material 
+<span class='text-warning font-weight-bold'>designer</span></a></div>
+                    <div>
+                        <ul class=nav>
+                            <li class="nav-item dropdown ml-lg-2">
+                                <a class="nav-link px-0" href=# role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false data-offset=0,10><img alt="Image placeholder" src=assets/img/icons/flags/tz.png class="svg-inject icon-flag"> <span class="d-none d-lg-inline-block">Tanzania</span> <span class=d-lg-none>EN</span></a>
+                               
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=ml-auto>
+                        <ul class=nav>
+                            <li class=nav-item><a class=nav-link href=https://www.freebloggertemplatetz.com/>Msaada</a></li>
+                            <li class=nav-item><a href=# class=nav-link data-action=omnisearch-open data-target=#omnisearch><i data-feather=search></i></a></li>
+                            <li class="nav-item dropdown"><a class=nav-link href=# data-toggle=dropdown aria-haspopup=true aria-expanded=false><i data-feather=shopping-cart></i></a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-md p-0">
+                                    <div class="d-flex align-items-center p-4">
+                                        <div class="h6 mb-0">Duka Letu</div><span class="badge badge-sm badge-success ml-2"><a href="https://www.freebloggertemplatetz.com/Linakujia">Free Templates</a></span></div>
+                                    <div class=row>
+                                        <div class="col-5 mx-auto"><img alt="Image placeholder" src=assets/img/svg/illustrations/illustration-11.svg class="svg-inject img-fluid"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-dark bg-dark" id=navbar-main>
+            <div class=container>
+                <a class=navbar-brand href=index.html><img alt="Image placeholder" src=assets/img/brand/lgh.png id=navbar-logo> </a>
+                <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><span class=navbar-toggler-icon></span></button>
+                <div class="collapse navbar-collapse navbar-collapse-overlay" id=navbar-main-collapse>
+                    <div class="collapse-header align-items-center">
+                        <div class=col-6>
+                            <a class=navbar-brand href=index.html><img alt="Image placeholder" src=assets/img/brand/light-mono.svg></a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><i data-feather=x></i></button>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class=nav-item><a class=nav-link href=pack/support.html>Home</a></li>
+                        <li class="nav-item dropdown dropdown-animate" data-toggle=hover><a class="nav-link "  href='pack/about.html' aria-haspopup=true aria-expanded=false>About Me</a>
+                        
+                        </li>
+                        <li class="nav-item dropdown dropdown-animate" data-toggle=hover><a class="nav-link " href=pack/mimi.html  aria-expanded=false>Documentations</a>
+                   
+                        </li>
+                        <li class="nav-item dropdown dropdown-animate" data-toggle=hover><a class="nav-link dropdown-toggle" href=# role=button aria-expanded=false>Documentations</a>
+                            <div class="dropdown-menu dropdown-menu-md p-0">
+                                <div class="list-group list-group-flush">
+                                    <a href=docs/index.html class="list-group-item list-group-item-action border-bottom" role=button>
+                                        <div class="media d-flex align-items-center">
+                                            <figure style=width:50px><img alt="Image placeholder" src=assets/img/svg/icons/DOC_File.svg class=img-fluid style=width:40px></figure>
+                                            <div class="media-body ml-3">
+                                                <h6 class=mb-0>Documentations</h6><small class=text-sm>Documentations</small></div>
+                                        </div>
+                                    </a>
+                                    <a href=docs/components/index.html class="list-group-item list-group-item-action" role=button>
+                                        <div class="media d-flex align-items-center">
+                                            <figure style=width:50px><img alt="Image placeholder" src=assets/img/svg/icons/Mobile_UI.svg class=img-fluid style=width:40px></figure>
+                                            <div class="media-body ml-3">
+                                                <h6 class=mb-0>Documents</h6><small class=text-sm>Document Exaples</small></div>
+                                        </div>
+                                    </a>
+                                </div>
+                             
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id=omnisearch class=omnisearch>
+        <div class=container>
+            <div class=omnisearch-container>
+                <form class=omnisearch-form>
+                    <div class=form-group>
+                        <div class="input-group input-group-merge input-group-flush">
+                            <div class=input-group-prepend><span class=input-group-text><i data-feather=search></i></span></div>
+                            <input type=text class=form-control placeholder="Type and hit enter ...">
+                        </div>
+                    </div>
+                </form>
+                <div class=omnisearch-suggestions>
+                    <h6 class=heading>Tafuta</h6>
+                    <div class=row>
+                        <div class=col-sm-6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a class=list-link href=#><i data-feather=clock></i> <span>Icon</span> Pambizo</a></li>
+                                <li><a class=list-link href=#><i data-feather=clock></i> <span>Sehemu</span> Section</a></li>
+                                <li><a class=list-link href=#><i data-feather=clock></i> <span>Makala</span> Mtandao</a></li>
+                                <li><a class=list-link href=#><i data-feather=clock></i> <span>Blogger</span> Miliki</a></li>
+                                <li><a class=list-link href=#><i data-feather=clock></i> <span>Code anuwai</span> Picha</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="slice slice-lg bg-gradient-primary">
+        <div data-offset-top=#navbar-main>
+            <div class="container d-flex align-items-center text-center text-lg-left pt-4">
+                <div class="col px-0">
+                    <div class="row row-grid align-items-center">
+                        <div class="col-lg-6 pr-lg-5">
+                            <h1 class="display-4 text-white mb-4">Make your website Strong and SEO friend <strong class=text-warning>luckmoshy Front-end-Designer and Developer.</strong></h1>
+                            <p class="lead text-white opacity-8">Are you looking for some immediate help in web designing services? If so, then avoid wasting any time, . I am readily available to provide top-notch quality services,
+							and within your affordable rates. The services are hard for you to miss.</p>
+                            <div class=mt-5><a href=#sct-next class="btn btn-white my-2" data-scroll-to data-scroll-to-offset=85>Ona zaidi...</a> <a href=pack/support.html class="btn btn-outline-white my-2">Nyaraka</a></div>
+                        </div>
+                        <div class=col-lg-6>
+                            <div class="row mx-n2">
+                                <div class="col-sm-6 mt-sm-6 px-sm-2">
+                                    <div class="card border-0 mb-3">
+                                        <div class=h-100><img class=card-img-top src=assets/img/theme/light/luckmoshy.jpg alt="Card image cap"></div>
+                                        <div class="card-body p-3">
+                                            <div class="d-flex align-items-center">
+                                                <div><span class="avatar avatar-sm rounded-circle bg-warning text-white">IT</span></div>
+                                                <div class=pl-3><span class="h6 text-sm mb-0">Luck moshy</span><br/>
+												<span class="h6 text-sm mb-0">Luckmoshy@gmail.com</span><br/><span class="h6 text-sm mb-0">+255(0)789545040</span>
+												</div>
+                                                <div class=ml-auto>
+                                                    <div class=actions><a href=https://wabunifuteam.com/ class=action-item><i data-feather=heart></i></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow-none mb-3">
+                                        <div class="p-3 d-flex">
+                                            <div>
+                                                <div class="icon icon-shape rounded-circle bg-success text-white mr-4"><i data-feather=check></i></div>
+                                            </div>
+                                            <div><span class=h6>Website Themes More than 200+ </span>
+                                                <p class="text-sm text-muted mb-0">Have been Created.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 px-sm-2">
+                                    <div class="card mb-3">
+                                        <div class="card-body py-5 text-center h-100">
+                                            <div class="img-fluid mb-4 w-50 mx-auto"><img src=assets/img/brand/logo.png width="120px" alt="Image placeholder"></div><span class="static-rating d-block"><i data-feather=star class="star voted"></i> <i data-feather=star class="star voted"></i> <i data-feather=star class="star voted"></i> <i data-feather=star class="star voted"></i> <i data-feather=star class=star></i></span>
+                                            <h5 class="h6 mt-4 mb-1">Star rated 4.95 of 5</h5>
+                                            <p class="text-muted text-sm mb-0">liked our task 23+</p>
+<div class="fb-share-button fb_iframe_widget" data-href="https://www.freebloggertemplatetz.com/" data-layout="button_count" data-size="small" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=535271033585507&amp;container_width=40&amp;href=https%3A%2F%2Fluckmoshy.github.io%2Fgetting-started%2FLayout.html&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;size=small"><span style="vertical-align: bottom; width: 70px; height: 20px;"><iframe name="f22e88f57f43864" title="fb:share_button Facebook Social Plugin" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium none; visibility: visible; width: 70px; height: 20px;" src="https://www.facebook.com/v3.2/plugins/share_button.php?app_id=535271033585507&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Dfe3c51cbdafd5e%26domain%3D%26origin%3Dfile%253A%252F%252F%252Ff22b7a749ec91d4%26relation%3Dparent.parent&amp;container_width=40&amp;href=https%3A%2F%2Fluckmoshy.github.io%2Fgetting-started%2FLayout.html&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;size=small" __idm_frm__="111669150164" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>    
+   <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 154px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.097c1f5038f9e8a0d62a39a892838d66.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=Bootstrablogger&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1567253488387" data-screen-name="Bootstrablogger" frameborder="0"></iframe><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+										</div>
+                                    </div>
+                                    <div class=card>
+                                        <div class="card-body text-center">
+                                            <a href=# class="avatar rounded-circle avatar-lg hover-translate-y-n3"><img alt="Image placeholder" src=assets/img/theme/light/blogger.svg> </a><a href=# class="d-block h6 mt-3 mb-4">Blogger Themes Development</a>
+                                            <div class="avatar-group hover-avatar-ungroup mb-2">
+                                                <a href=# class="avatar rounded-circle avatar-sm"><img alt="Image placeholder" src=assets/img/theme/light/person-1.jpg class=""> </a>
+                                                <a href=# class="avatar rounded-circle avatar-sm"><img alt="Image placeholder" src=assets/img/theme/light/person-2.jpg class=""> </a>
+                                                <a href=# class="avatar rounded-circle avatar-sm"><img alt="Image placeholder" src=assets/img/theme/light/person-3.jpg class=""></a>
+                                            </div><span class=clearfix><a href=# class="btn btn-sm btn-primary p-1 py-0">Git Hub</a></span>
+                                            <div class="mt-3 pt-3 delimiter-top">
+                                                <div class=actions><a href=#! class="action-item mr-3"><i data-feather=paperclip></i></a> <a href=#! class="action-item mr-3"><i data-feather=eye></i></a> <a href=#! class=action-item><i data-feather=heart></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=slice id=sct-next>
+        <div class=container>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 row">
+                    <div class=col-sm-4>
+                        <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                            <div class="p-4 text-center text-sm-left">
+                                <h3 class="h4 mb-0"><span class="counter h2 font-weight-bolder" data-from=0 data-to=16 data-speed=3000 data-refresh-interval=200></span> <span class="counter-extra font-weight-light ml-n1">k</span></h3>
+                                <p class="text-muted mb-0">Wateja</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=col-sm-4>
+                        <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                            <div class="p-4 text-center text-sm-left">
+                                <h3 class="h4 mb-0"><span class="counter h2 font-weight-bolder" data-from=0 data-to=10 data-speed=3000 data-refresh-interval=200></span> <span class="counter-extra font-weight-light ml-n1">k</span></h3>
+                                <p class="text-muted mb-0">Zilzopakuliwa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=col-sm-4>
+                        <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                            <div class="p-4 text-center text-sm-left">
+                                <h3 class="h4 mb-0"><span class="counter h2 font-weight-bolder" data-from=0 data-to=28 data-speed=3000 data-refresh-interval=200></span> <span class="counter-extra font-weight-light ml-n1">%</span></h3>
+                                <p class="text-muted mb-0">Waliofurahia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg delimiter-bottom">
+        <div class=container>
+            <div class="row justify-content-center mb-6">
+                <div class="col-lg-7 text-center">
+                    <h1 class=mb-4>Web Design Agency in Tanzania Choose us for Help</h1>
+                    <p class="lead lh-190">If you are confused to choose the best web design company in Tanzania among so many options, make way for my name. </p>
+                </div>
+            </div>
+            <div class=row>
+                <div class="col-md-7 mx-auto"><img alt="Image placeholder" src=assets/img/svg/illustrations/illustration-5.svg class=img-fluid></div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg delimiter-bottom">
+        <div class=container>
+            <div class=row>
+                <div class="col-lg-6 col-md-10"><span class="badge badge-primary badge-pill">Vipengele muhimu</span>
+                    <h5 class="h5 lh-180 mt-4 mb-6">We are here to provide you with quality help, as we believe in offering promising results. Always make sue to join us for the finest response. After sketching out your needs, we will offer quality help, 
+					with the best result. We are glad to offer responsive quality web design services...</h5></div>
+            </div>
+            <div class=row>
+                <div class="col-lg-3 col-sm-6 mb-lg-0">
+                    <div class="card hover-translate-y-n10 hover-shadow-lg">
+                        <div class=card-body>
+                            <div class=pb-4><img alt="Image placeholder" src="assets/img/brand/1.svg" width="50px"></div>
+                            <div class="pt-2 pb-3">
+                                <h5>Nice Code</h5>
+                                <p class="text-muted mb-0">Vipengele vyote vimejengwa kwa kutumika  mchanganyiko wa Bootstrap na Blogger Xml.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card hover-translate-y-n10 hover-shadow-lg mb-lg-0">
+                        <div class=card-body>
+                            <div class=pb-4><img alt="Image placeholder" src="assets/img/brand/2.svg" width="50px"></div>
+                            <div class="pt-2 pb-3">
+                                <h5>Responsive</h5>
+                                <p class="text-muted mb-0">100% we design,create and develope each theme and website strong,dinamic and Responsive staring from @360px to  1900dp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card hover-translate-y-n10 hover-shadow-lg mb-lg-0">
+                        <div class=card-body>
+                            <div class=pb-4><img alt="Image placeholder" src="assets/img/brand/3.svg" width="50px"></div>
+                            <div class="pt-2 pb-3">
+                                <h5>Inashangaza</h5>
+                                <p class="text-muted mb-0">Endelea kubadilika wakati wa kutengeneza huduma mpya za Blogger.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card hover-translate-y-n10 hover-shadow-lg mb-lg-0">
+                        <div class=card-body>
+                            <div class=pb-4><img alt="Image placeholder" src="assets/img/brand/5.svg" width="50px"></div>
+                            <div class="pt-2 pb-3">
+                                <h5>Imeboreshwa</h5>
+                                <p class="text-muted mb-0">Badilisha vigeugeu vichache na visasisho vya mandhari nzima.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <div class="container container-lg">
+            <div class="row row-grid align-items-center">
+                <div class=col-lg-5><span class="badge badge-primary badge-pill">Zana za Kuunda</span>
+                    <h3 class="h2 mt-4">Web Design Agency Tanzania BEST RESPONSE OF ALL TIME</h3>
+                    <p class="mb-4 lh-190">It is mandatory for you to give us an immediate call, whenever you are planning to take help of myweb designing services. Our agency is working with so many business owners. There are loads of interesting packages, and I am glad to offer impeccable solutions, over here..</p>
+                    <ul class=list-unstyled>
+                        <li class=py-2>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="badge badge-circle badge-success mr-3"><i data-feather=check></i></div>
+                                </div>
+                                <div>
+                                    <p class=mb-0>I can even decorate and create some website styles for your app</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class=py-2>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="badge badge-circle badge-success mr-3"><i data-feather=check></i></div>
+                                </div>
+                                <div>
+                                    <p class=mb-0>I am likely to help you with web designing services from the scratch.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class=py-2>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="badge badge-circle badge-success mr-3"><i data-feather=check></i></div>
+                                </div>
+                                <div>
+                                    <p class=mb-0>I am here to offer advanced web and mobile web designing services.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 ml-lg-auto">
+                    <div class="position-relative pt-md-5 pr-md-5 pt-lg-5 pt-xl-7 pr-xl-5">
+                        <div class="card border-0 shadow-lg zindex-100 col-md-8 px-0 position-md-absolute top-md-0 right-md-n0 right-lg-n3 right-xl-n5 zindex-100">
+                            <figure><img alt="Image placeholder" src=assets/img/theme/light/img-4-1000x800.jpg class=card-img></figure>
+                            <div class="card-img-overlay d-flex">
+                                <div class=text-center><a href="https://www.youtube.com/watch?v=zodT9bCdIiI" class="btn btn-xs btn-warning btn-icon" data-fancybox=""><span class=btn-inner--text>Play video</span> <span class=btn-inner--icon><i data-feather=play></i></span></a></div>
+                            </div>
+                        </div>
+                        <div class=card>
+                            <div class="card-header border-bottom py-4 px-5">
+                                <h6 class="h5 mb-0">Outsource Web </h6></div>
+                            <div class="card-body px-5">
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item py-4 px-0">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div>
+                                                <h6 class="progress-text mb-1 d-block">Web Designer Tanzania</h6></div>
+                                            <div class=text-right><span class="h6 font-weight-light">3:50</span> <i data-feather=chevron-right class=ml-2></i></div>
+                                        </div>
+                                        <div class="progress progress-xs mb-0">
+                                            <div class="progress-bar bg-primary" role=progressbar style=width:40% aria-valuenow=40 aria-valuemin=0 aria-valuemax=100></div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item py-4 px-0">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div>
+                                                <h6 class="progress-text mb-1 d-block">I  Development Offshore</h6></div>
+                                            <div class=text-right><span class="h6 font-weight-light">4:00</span> <i data-feather=chevron-right class=ml-2></i></div>
+                                        </div>
+                                        <div class="progress progress-xs mb-0">
+                                            <div class="progress-bar bg-primary" role=progressbar style=width:60% aria-valuenow=60 aria-valuemin=0 aria-valuemax=100></div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item py-4 px-0">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div>
+                                                <h6 class="progress-text mb-1 d-block">kwa Mfano na vipengele </h6></div>
+                                            <div class=text-right><span class="h6 font-weight-light">6:50</span> <i data-feather=chevron-right class=ml-2></i></div>
+                                        </div>
+                                        <div class="progress progress-xs mb-0">
+                                            <div class="progress-bar bg-primary" role=progressbar style=width:80% aria-valuenow=80 aria-valuemin=0 aria-valuemax=100></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <div class=container-fluid>
+            <div class="jumbotron bg-dark shadow-lg mb-0"><img src=assets/img/svg/backgrounds/flat-mountains.svg alt=Image class="img-fluid img-as-bg">
+                <div class=container>
+                    <div class="row pt-6 pb-5">
+                        <div class=col-lg-12>
+                            <h2 class="h3 lh-170 text-white"><strong class=text-danger>Now,</strong> you might have come across our web design agency Tanzania, but not quite sure whether to take our services or not. With so many options and hard competition, it is quite difficult for you to choose the best name. We agree with you on that. But, you are most welcome to check on our web designing outsourcing services, and previous results, to see, what we are capable of offering you with..</h2>
+                            <div class=mt-5><a href=# class="btn btn-lg btn-warning btn-icon mb-3 mb-lg-0 d-none"><span class=btn-inner--icon><i data-feather=moon></i> </span><span class=btn-inner--text>Switch to Dark Mode</span> </a><a href=https://wabunifuteam.com/ target=_blank class="btn btn-lg btn-warning btn-icon mb-3 mb-lg-0"><span class=btn-inner--text>Jifunze Zaidi..</span> <span class=btn-inner--icon><i data-feather=arrow-right></i></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <div class=container>
+            <div class="row row-grid align-items-center justify-content-between">
+                <div class="col-lg-5 col-md-6 order-md-2">
+                    <div class=pr-md-4>
+                        <h3 class="h2 mt-4">GET WEBSITE DESIGN AND DEVELOPMENT SERVICES AT UP TO 15% AFFORDABLE PRICES.</h3>
+                        <p class="lead my-4 lh-190">So, once you choose a single package, you will receive all the necessary services, within that lot. So, it means, you do not even have to spend any extra money for our services. And that’s what makes us different from the rest. Even in this competitive world, it won’t be tough for you to check out name on the top-rated lists...</p><strong class="text-warning text-underline--dashed">Modularity yenye bora</strong></div>
+                </div>
+                <div class="col-md-6 col-lg-7 order-md-1">
+                    <div class=frame-laptop><img alt="Image placeholder" src=assets/img/svg/devices/macbook.svg class=img-fluid>
+                        <div class=frame-inner><img alt="Image placeholder" src=assets/img/theme/light/laptop-screen-1.png class=img-fluid></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-xl bg-primary">
+        <div class=container>
+            <div class="row justify-content-center mb-6">
+                <div class="col-lg-7 text-center">
+                    <h1 class="mb-4 text-white">Do you want or hire  a real website Developer and Designer with 99% efficient web code? </h1>
+                    <p class="lh-190 text-white opacity-8">We are ranked one of the fastest growing web design,Themes Designer and development company in Tanzania, with 60+ successfully delivered projects across Tanzania 
+					Kenya and other countries. Over 80% of client retention rate demonstrates our level of services and client satisfaction..</p>
+                </div>
+            </div>
+            <div class="row mx-lg-n4">
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4"><i data-feather=check></i></div>
+                            </div>
+                            <div><span class=h6>100% Responsive</span>
+                                <p class="text-sm text-muted mb-0">I /we make it responsive.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-primary text-white mr-4"><i data-feather=check></i></div>
+                            </div>
+                            <div><span class=h6>We also Bootstrap 4</span>
+                                <p class="text-sm text-muted mb-0">Built to be customized.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-danger text-white mr-4"><i data-feather=check></i></div>
+                            </div>
+                            <div><span class=h6>We also use  SASS</span>
+                                <p class="text-sm text-muted mb-0">to make job easy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-success text-white mr-4"><i data-feather=check></i></div>
+                            </div>
+                            <div><span class=h6>Web Code 100+</span>
+                                <p class="text-sm text-muted mb-0">Nice and efficient.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-info text-white mr-4">
+                                    <svg xmlns=http://www.w3.org/2000/svg width=24 height=24 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round class="feather feather-check">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div><span class=h6> Browser cross platform</span>
+                                <p class="text-sm text-muted mb-0">All world major Browser compatibility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div class="icon icon-shape rounded-circle bg-warning text-white mr-4"><i data-feather=check></i></div>
+                            </div>
+                            <div><span class=h6> Flexbox Grid</span>
+                                <p class="text-sm text-muted mb-0">Nice and good looking .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-4">
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle bg-info text-white mr-4"><i data-feather=check></i></div>
+                                </div>
+                            </div>
+                            <div><span class=h6>We also us SVG icons</span>
+                                <p class="text-sm text-muted mb-0">to make your website clear.. .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle bg-danger text-white mr-4"><i data-feather=check></i></div>
+                                </div>
+                            </div>
+                            <div><span class=h6>SEO friend</span>
+                                <p class="text-sm text-muted mb-0">We optmize your web to all Search Engine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-none">
+                        <div class="p-3 d-flex">
+                            <div>
+                                <div>
+                                    <div class="icon icon-shape rounded-circle bg-primary text-white mr-4"><i data-feather=check></i></div>
+                                </div>
+                            </div>
+                            <div><span class=h6>Back-end and Front-end framework </span>
+                                <p class="text-sm text-muted mb-0">We use morden Web framework.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg bg-section-secondary">
+        <div class=container>
+            <div class="row mb-6 justify-content-center text-center">
+                <div class="col-lg-8 col-md-10">
+                    <h2 class=mt-4>Workig Time</h2>
+                    <div class=mt-3>
+                        <p class="lead lh-180">Our technical come as a custom business solution provider will help you achieve the desirable results that will augment growth prospects.
+						Our team can boast of providing you with the perfect benefit with our use of technology platforms..</p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="mt-5 text-center">
+                <p class=mb-2>Bei zote zina msaada wa bure wa mwaka mmoja. au MaHitaji zaidi?</p><a href=# class="text-primary text-underline--dashed">Wasiliana nasi<i data-feather=arrow-right class=ml-2></i></a></div>
+        </div>
+    </section>
+    <section>
+        <div class="container mb-5 py-5 border-bottom">
+            <div class="row align-items-center text-center text-lg-left">
+                <div class="col-12 col-lg mb-4 mb-lg-0">
+                    <h3 class="h5 mb-1">My vision are based on complete transparency and guided by ethical practices.</h3>
+                    <p class="font-size-lg text-muted mb-0">I am striving to become a global solution provider in IT solutions with focusing on innovation..</p>
+                </div>
+                <div class="col-12 col-lg-auto"><a href=pack/support.html class="btn btn-neutral btn-icon my-2"><span class=btn-inner--icon><i data-feather=book class=text-primary></i> </span><span class=btn-inner--text>Project</span> </a><a href=https://luckmoshy.com/ class="btn btn-warning my-2" target=_blank>My Offer</a></div>
+            </div>
+        </div>
+    </section>
+    <footer id=footer-main>
+        <div class="footer footer-light">
+            <div class=container>
+                <div class="row pt-md">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class=card>
+                            <div class=card-body><img alt="Image placeholder" src=assets/img/svg/icons/Apps.svg class=img-fluid style=width:30px>
+                                <h5 class="h6 font-weight-bold mt-4 mb-2">My theme..</h5>
+                                <p class="text-sm mb-2">I am dedicated to providing cost effective methods to my clients and provide the right deliverable after a careful understanding of the business objective of the client.</p><a href=https://wabunifuteam.com/ class=text-sm>Get in touch</a></div>
+                        </div>
+                    </div>
+                 
+                  
+                 
+                </div>
+                <div class="row align-items-center justify-content-md-between py-4 mt-4 border-top mx-0">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="copyright text-sm font-weight-bold text-center text-md-left">&copy; 2020 <a href=https://nunuablog.io/ class=font-weight-bold target=_blank>Luckmoshy &amp; Bootstrablogger</a>. Haki zote zimehifadhiwa.</div>
+                    </div>
+                    <div class=col-md-6>
+                        <ul class="nav align-items-center justify-content-center justify-content-md-end">
+                            <li class="nav-item dropdown border-right pr-2">
+                                <a class="nav-link btn btn-xs btn-neutral" href=# role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><img alt="Image placeholder" src=assets/img/icons/flags/tz.png class="svg-inject icon-flag"> <span class="h6 text-sm mb-0">Tanzania</span></a>
+                                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                    <a href=# class=dropdown-item><img alt="Image placeholder" src=assets/img/icons/flags/es.svg class="svg-inject icon-flag">Spanish</a>
+                                    <a href=# class=dropdown-item><img alt="Image placeholder" src=assets/img/icons/flags/us.svg class="svg-inject icon-flag">English</a>
+                                    <a href=# class=dropdown-item><img alt="Image placeholder" src=assets/img/icons/flags/gr.svg class="svg-inject icon-flag">Greek</a>
+                                </div>
+                            </li>
+                            <li class=nav-item><a class=nav-link href=#>Help</a></li>
+                            <li class=nav-item><a class=nav-link href=#>Term</a></li>
+                            <li class=nav-item><a class="nav-link pr-0" href=#>Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade fixed-right" id=modal-products tabindex=-1 role=dialog aria-hidden=true>
+        <div class="modal-dialog modal-vertical" role=document>
+            <div class=modal-content>
+                <div class=scrollbar-inner>
+                    <div class=modal-body>
+                        <h5 class="h6 mt-3">Blogger Theme</h5>
+                        <p class=text-sm>Watumiaji wetu wanapenda jinsi ilivyo rahisi kufanya kazi na matoleo yetu. Rahisi kubadili, kucheza na kukuza bidhaa mpya.</p>
+                        <hr class=my-4>
+                        <div class="card card-overlay hover-shadow-lg">
+                            <div class=h-100><img src=../../webpixels.s3.eu-central-1.amazonaws.com/public/themes/products/quick-website-ui-kit.png class=card-img-top alt="Quick Website UI Kit"></div>
+                            <div class="card-img-overlay d-flex flex-column align-items-center p-0">
+                                <div class="overlay-actions w-100 card-footer mt-auto"><a href=https://themes.getbootstrap.com/product/purpose-quick-ui-kit/ class="h6 mb-0 stretched-link" target=_blank>Quick Website UI Kit</a></div>
+                            </div>
+                        </div>
+                        <div class="card card-overlay hover-shadow-lg">
+                            <div class=h-100><img src=../../webpixels.s3.eu-central-1.amazonaws.com/public/themes/products/purpose-website-ui-kit.png class=card-img-top alt="Purpose Website UI Kit"></div>
+                            <div class="card-img-overlay d-flex flex-column align-items-center p-0">
+                                <div class="overlay-actions w-100 card-footer mt-auto"><a href=https://themes.getbootstrap.com/product/purpose-website-ui-kit/ class="h6 mb-0 stretched-link" target=_blank>Purpose Website UI Kit</a></div>
+                            </div>
+                        </div>
+                        <div class="card card-overlay hover-shadow-lg">
+                            <div class=h-100><img src=../../webpixels.s3.eu-central-1.amazonaws.com/public/themes/products/purpose-application-ui-kit.png class=card-img-top alt="Purpose Application UI Kit"></div>
+                            <div class="card-img-overlay d-flex flex-column align-items-center p-0">
+                                <div class="overlay-actions w-100 card-footer mt-auto"><a href=https://themes.getbootstrap.com/product/purpose-application-ui-kit/ class="h6 mb-0 stretched-link" target=_blank>Purpose Application UI Kit</a></div>
+                            </div>
+                        </div>
+                        <div class="card card-placeholder align-items-center flex-column justify-content-center border-dashed" style=height:250px>
+                            <div class="col text-center">
+                                <div class=pt-5><i data-feather=smile class=text-primary style=width:50px;height:50px></i> <span class="h5 d-block mt-3">Kinachofuata?</span></div>
+                                <p class="text-sm px-4 mt-2 mb-0">Tayari tunafanya kazi kwenye bidhaa mpya, kwa hivyo kukaa tuned.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex=-1 role=dialog id=modal-cookies data-backdrop=false aria-labelledby=modal-cookies aria-hidden=true>
+        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+            <div class="modal-content bg-dark">
+                <div class=modal-body>
+                    <p class="text-sm text-white mb-3">Tunatumia kuki ili mada zetu zikufanyie kazi. Kwa kutumia wavuti yetu, unakubali matumizi yetu ya kuki.</p><a href=pages/utility/terms.html class="btn btn-sm btn-neutral" target=_blank>Learn more</a>
+                    <button type=button class="btn btn-sm btn-warning mr-2" data-dismiss=modal>OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=assets/libs/jquery/dist/jquery.min.js></script>
+    <script src=assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js></script>
+    <script src=assets/libs/in-view/dist/in-view.min.js></script>
+    <script src=assets/libs/sticky-kit/dist/sticky-kit.min.js></script>
+    <script src=assets/libs/svg-injector/dist/svg-injector.min.js></script>
+    <script src=assets/libs/feather-icons/dist/feather.min.js></script>
+    <script src=assets/libs/imagesloaded/imagesloaded.pkgd.min.js></script>
+    <script src=assets/libs/jquery.scrollbar/jquery.scrollbar.min.js></script>
+    <script src=assets/libs/jquery-scroll-lock/dist/jquery-scrollLock.min.js></script>
+    <script src=assets/libs/swiper/dist/js/swiper.min.js></script>
+    <script src=assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js></script>
+    <script src=assets/js/quick-website.js></script>
+    <script>
+        feather.replace({
+            width: "1em",
+            height: "1em"
+        })
+    </script>
+    
+</body>
+
+
+
+</html>
